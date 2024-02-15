@@ -84,7 +84,7 @@ function play() {
     // reset life and score //
     setTextId('current-score',0);
     setTextId('current-life',5);
-    continueGame()
+    continueGame();
 }
 
 function gameOver(){
@@ -94,6 +94,11 @@ function gameOver(){
     // showFinalscore.classList.remove('hidden')
 
     // updated the game over score //
+    const lastscore =getTextElementId('current-score');
+    setTextId('last-score',lastscore)
+    // clear the last alphabet bg //
+    const currentAlphabet = elementTextByid('current-alphabet');
+    removeBackGroundColorId(currentAlphabet);
 
 }
 

@@ -32,6 +32,11 @@ function setTextId(elementId,value){
     element.innerText =value;
 }
 
+function elementTextByid(elementId){
+    const element =document.getElementById(elementId);
+    const text =element.innerText;
+    return text;
+}
 
 
 function getAlphabetRandom(){
